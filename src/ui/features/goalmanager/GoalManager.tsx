@@ -99,7 +99,7 @@ export function GoalManager(props: Props) {
       name: name ?? props.goal.name,
       targetDate: targetDate ?? props.goal.targetDate,
       targetAmount: targetAmount ?? props.goal.targetAmount,
-      icon: icon ?? props.goal.icon,
+      icon: emoji.native ?? props.goal.icon,
     }
     // TODO(TASK-2) Update Redux store
     dispatch(updateGoalRedux(updatedGoal))
